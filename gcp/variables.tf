@@ -3,8 +3,8 @@ variable "gce_ssh_user" {
   type = string
 }
 
-variable "gce_ssh_pub_key_file" {
-  description = "The contents of the public SSH key assocaited with the local user account"
+variable "ssh_pub_key_file" {
+  description = "The contents of the public SSH key associated with the local user account"
   type = string
 }
 
