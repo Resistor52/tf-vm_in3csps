@@ -10,6 +10,7 @@ variable "aws_profile" {
   description = "The profile in the credentials tile to use"
 }
 
-variable "aws_pem" {
-  description = "The PEM file to use for SSH. This is outputted with the IP for convenience"
+variable "ssh_pub_key_file" {
+  description = "The contents of the public SSH key associated with the local user account"
+  type = string
 }

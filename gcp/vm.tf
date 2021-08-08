@@ -19,6 +19,8 @@ resource "google_compute_instance" "vm_instance" {
     sshKeys = "${var.gce_ssh_user}:${file(var.ssh_pub_key_file)}"
     }
 
+  # metadata_startup_script = file("workstation1.sh")
+
   tags = ["ssh-server"]
 
 }

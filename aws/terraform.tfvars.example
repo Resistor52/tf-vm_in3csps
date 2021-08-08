@@ -1,0 +1,4 @@
+aws_region = "us-east-1"
+aws_creds_file = "/home/USER/.aws/credentials"
+aws_profile = "YOUR_PROFILE"
+ssh_pub_key_file = "~/.ssh/id_rsa.pub"
