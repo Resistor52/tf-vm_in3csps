@@ -4,14 +4,14 @@ module "aws" {
   aws_profile = var.aws_profile
   ssh_pub_key_file = var.ssh_pub_key_file
   ssh_priv_key_file = var.ssh_priv_key_file
-  source = "./module/aws"
+  source = "./modules/aws"
 }
 
 module "azure" {
   azure_location = var.azure_location
   ssh_pub_key_file = var.ssh_pub_key_file
   ssh_priv_key_file = var.ssh_priv_key_file
-  source = "./module/azure"
+  source = "./modules/azure"
 }
 
 module "gcp" {
@@ -21,5 +21,5 @@ module "gcp" {
   gcp_key_file = var.gcp_key_file
   ssh_pub_key_file = var.ssh_pub_key_file
   ssh_priv_key_file = var.ssh_priv_key_file
-  source = "./module/gcp"
+  source = "./modules/gcp"
 }
