@@ -9,7 +9,7 @@ resource "google_compute_instance" "vm_instance" {
   }
 
   network_interface {
-    network = google_compute_network.vpc_network.self_link
+    network = google_compute_network.hitc-vpc.self_link
     access_config {
       nat_ip = google_compute_address.static.address
       }

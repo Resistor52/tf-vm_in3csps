@@ -5,7 +5,7 @@ resource "google_compute_network" "hitc-vpc" {
 
 resource "google_compute_firewall" "ssh-server" {
   name    = "default-allow-ssh-terraform"
-  network = google_compute_network.vpc_network.name
+  network = google_compute_network.hitc-vpc.name
 
   allow {
     protocol = "tcp"
