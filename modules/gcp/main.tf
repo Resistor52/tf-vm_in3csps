@@ -13,3 +13,7 @@ provider "google" {
   region  = var.gcp_region
   zone    = var.gcp_zone
 }
+
+data "http" "myip" {
+  url = "https://api.ipify.org"
+}

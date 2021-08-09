@@ -13,6 +13,6 @@ resource "google_compute_firewall" "ssh-server" {
   }
 
   // Allow traffic from everywhere to instances with an ssh-server tag
-  source_ranges = ["0.0.0.0/0"]
+  source_ranges = ["${chomp(data.http.myip.body)}/32"]
   target_tags   = ["ssh-server"]
 }

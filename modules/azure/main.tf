@@ -13,3 +13,7 @@ provider "azurerm" {
 
 data "azurerm_subscription" "current" {
 }
+
+data "http" "myip" {
+  url = "https://api.ipify.org"
+}
