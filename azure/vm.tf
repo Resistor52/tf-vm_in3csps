@@ -2,7 +2,7 @@ resource "azurerm_linux_virtual_machine" "vm_instance" {
   name                            = "hitc"
   location                        = azurerm_resource_group.hitc.location
   resource_group_name             = azurerm_resource_group.hitc.name
-  network_interface_ids           = [azurerm_network_interface.hitc.id]
+  network_interface_ids           = [azurerm_network_interface.hitc-nic.id]
   size                            = "Standard_B1s"
   computer_name                   = "hitc-azure"
   admin_username                  = "ubuntu"
