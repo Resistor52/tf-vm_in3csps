@@ -15,3 +15,10 @@ sudo /tmp/aws/install
 ```
 curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
 ```
+
+Delete Terraform State Files:
+
+```
+rm */terraform.tfs*
+rm -rf */.terraf*
+```

@@ -1,0 +1,7 @@
+ssh_user ="ubuntu"
+gcp_project = "PROJECT_ID"
+gcp_region  = "us-central1"
+gcp_zone    = "us-central1-a"
+gcp_key_file = "~/accesskey/service_account.json"
+ssh_pub_key_file = "~/.ssh/id_rsa.pub"
+ssh_priv_key_file = "~/.ssh/id_rsa"
