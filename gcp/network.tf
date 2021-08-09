@@ -1,5 +1,5 @@
-resource "google_compute_network" "vpc_network" {
-  name                    = "vpc-network"
+resource "google_compute_network" "hitc-vpc" {
+  name                    = "hitc-vpc"
   auto_create_subnetworks = "true"
 }
 

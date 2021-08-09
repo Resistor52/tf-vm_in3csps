@@ -13,18 +13,7 @@ variable "ssh_priv_key_file" {
   type = string
 }
 
-variable "gcp_project" {
-  description = "The GCP Project ID to deploy the VM"
-}
-
-variable "gcp_region" {
-  description = "The GCP Region to deploy the VM"
-}
-
-variable "gcp_zone" {
-  description = "The GCP Zone to deploy the VM"
-}
-
-variable "gcp_key_file" {
-  description = "The path to the GCP Ser4vice Account"
+variable "azure_location" {
+  description = "The region of Azure resource group for this HitC Exercise"
+  type = string
 }

@@ -4,9 +4,14 @@
 - assumes terraform installed (use latest version)
 - assumes aws cli installed
 
-
 ```
 sudo curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "/tmp/awscliv2.zip"
 sudo unzip /tmp/awscliv2.zip -d /tmp
 sudo /tmp/aws/install
+```
+
+- assumes the az cli is installed
+
+```
+curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
 ```
