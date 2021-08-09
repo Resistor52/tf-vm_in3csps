@@ -32,3 +32,9 @@ resource "azurerm_linux_virtual_machine" "vm_instance" {
     type = "SystemAssigned"
   }
 }
+
+data "azurerm_public_ip" "vm" {
+  depends_on          = [azurerm_linux_virtual_machine.vm_instance, azurerm_public_ip.hitc]
+  name                = azurerm_public_ip.hitc.name
+  resource_group_name = azurerm_resource_group.hitc.name
+}

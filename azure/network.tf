@@ -12,6 +12,12 @@ resource "azurerm_subnet" "hitc-subnet" {
   address_prefixes     = ["10.0.2.0/24"]
 }
 
+resource "azurerm_public_ip" "hitc" {
+   name                = "hitc"
+   location            = azurerm_resource_group.hitc.location
+   resource_group_name = azurerm_resource_group.hitc.name
+   allocation_method   = "Dynamic"
+
 resource "azurerm_network_interface" "hitc-nic" {
   name                = "hitc-nic"
   location            = azurerm_resource_group.hitc.location
